@@ -1,0 +1,6 @@
+Feature: Auto-commit validation
+
+Scenario: Worker auto-commits after successful execution
+  Given a worker
+  When the worker successfully executes a task
+  Then the worker should auto-commit the changes
